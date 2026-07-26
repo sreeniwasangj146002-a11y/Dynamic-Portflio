@@ -1,0 +1,284 @@
+{
+  "admin": {
+    "username": "admin",
+    "passwordHash": "$2a$10$i8MvnumWPEV8O4oUwRLpLetzYP.02pYQHESkpphQPias/kWu819oC"
+  },
+  "hero": {
+    "name": "SREENIWASAN G J",
+    "title": "MERN Stack Developer",
+    "tagline": "Full-stack developer with 1+ year of experience building and shipping production ERP systems end-to-end -frontend, backend, database design, and third-party integrations like payments, biometric hardware, and GPS.",
+    "location": "SALEM , TAMILNADU",
+    "photo": "/uploads/photos/00C3kQ8thG.png",
+    "resumeUrl": "/uploads/resume/H8xGQ--4Ub.pdf",
+    "stats": [
+      {
+        "label": "Years Experience",
+        "value": "1"
+      },
+      {
+        "label": "Projects Shipped",
+        "value": "4+"
+      },
+      {
+        "label": "Hardware Integrations",
+        "value": "1"
+      },
+      {
+        "label": "Learning & Growing",
+        "value": "∞"
+      }
+    ],
+    "socials": {
+      "email": "sreeniwasan14@gmail.com",
+      "phone": "6383078329",
+      "linkedin": "www.linkedin.com/in/sreeniwasan-g-j-40164a25",
+      "github": "https://github.com/sreeniwasangj146002-a11y",
+      "twitter": ""
+    }
+  },
+  "about": {
+    "bio": [
+      "I'm a full-stack MERN developer at Aalan Tech Soft, where I own production ERP systems from architecture through deployment. My flagship project, the Harwin Interior Design ERP, is a multi-branch system covering billing, inventory, and admin management that I built solo — React frontend, Node/Express REST APIs, and MongoDB schema design.",
+      "Beyond the standard web stack, I like taking on the parts most developers avoid: integrating ESSL K30 biometric hardware for attendance, wiring up GPS delivery tracking, and building payment flows with Razorpay and UPI. I also use AI coding assistants like Claude and ChatGPT as part of my everyday workflow to move faster without cutting corners on quality."
+    ],
+    "highlights": [
+      "Role-based JWT authentication & admin dashboards built from scratch",
+      "Biometric (ESSL K30) and GPS hardware integrations",
+      "Payment gateway integration (Razorpay, UPI/QR)",
+      "Comfortable extending live client systems without breaking production"
+    ],
+    "education": [
+      {
+        "degree": "BE, Computer Science & Engineering",
+        "school": "Thiagarajar College of Engineering, Madurai, Tamil Nadu",
+        "detail": "CGPA 7.32",
+        "date": "May 2025"
+      },
+      {
+        "degree": "Diploma in Computer Science & Engineering",
+        "school": "Muthayammal Polytechnic Institution, Namakkal",
+        "detail": "95%",
+        "date": "May 2022"
+      }
+    ]
+  },
+  "skills": {
+    "categories": [
+      {
+        "name": "Frontend",
+        "tags": [
+          "React.js",
+          "HTML5",
+          "CSS",
+          "Bootstrap",
+          "Responsive Design"
+        ]
+      },
+      {
+        "name": "Backend",
+        "tags": [
+          "Node.js",
+          "Express.js",
+          "REST API Design",
+          "PHP",
+          "JavaScript (ES6+)"
+        ]
+      },
+      {
+        "name": "Integrations",
+        "tags": [
+          "Razorpay",
+          "UPI / QR Payments",
+          "ESSL K30 Biometric"
+        ]
+      },
+      {
+        "name": "AI-Assisted Development",
+        "tags": [
+          "Claude AI",
+          "ChatGPT",
+          "Rapid Prototyping AI-assisted Debugging"
+        ]
+      },
+      {
+        "name": "Tools",
+        "tags": [
+          "Git",
+          "Postman",
+          "XAMPP",
+          "VS Code",
+          "LT Browser"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "email": "sreeniwasan14@gmail.com",
+    "phone": "+91  6383078329",
+    "location": "Mallur , Salem , Tamilnadu - India",
+    "availability": "Open to new opportunities"
+  },
+  "projects": [
+    {
+      "id": "0XAC-V_7",
+      "category": "experience",
+      "title": "Interior Design ERP Management System",
+      "role": "Full-Stack Developer & Team Lead",
+      "description": "Multi-branch ERP covering billing, inventory, and admin management. Built the React frontend, Node/Express REST APIs, and MongoDB schema, plus role-based JWT authentication and the admin dashboard from scratch. Integrated ESSL K30 biometric hardware for attendance; leading development of an in-progress GPS tracking module (\"Wheel on Eye\") for real-time delivery tracking.",
+      "tech": [
+        "MERN",
+        "ESSL K30",
+        "JWT"
+      ],
+      "link": "",
+      "image": "",
+      "featured": true
+    },
+    {
+      "id": "Lcc1BX2f",
+      "category": "experience",
+      "title": "Hotel & Restaurant ERP System",
+      "role": "Backend Developer",
+      "description": "Designed the backend database schema, built REST API routes, and implemented core workflow logic for a hotel and restaurant management system.",
+      "tech": [
+        "Node.JS",
+        "MongoDB",
+        "REST API"
+      ],
+      "link": "",
+      "image": "",
+      "featured": false
+    },
+    {
+      "id": "OHODOl5g",
+      "category": "personal",
+      "title": "Secure File sharing Using Cryptography in MERN Stack",
+      "role": "Academic Project",
+      "description": "Secure file management platform with upload/download, CRUD operations, and access protection between role-based users. Tech: MongoDB, Express.js, React.js, Node.js",
+      "tech": [
+        "MERN"
+      ],
+      "link": "https://github.com/sreeniwasangj146002-a11y/Secure-File-Sharing-System-Using-Cryptography",
+      "image": "/uploads/photos/E4hD7S-pgX.jpg",
+      "featured": false
+    },
+    {
+      "id": "Y3495cK2",
+      "category": "experience",
+      "title": "Training Institution Website",
+      "role": "Frontend Developer",
+      "description": "Designed and developed a responsive static website for a training institution. The website includes a modern landing page, course highlights, trainer profiles, testimonials, and a contact section. Built with HTML, CSS, JavaScript, and Bootstrap, focusing on clean UI, responsiveness, and user-friendly navigation.",
+      "tech": [
+        "HTML",
+        "CSS",
+        "JAVASCRIPT",
+        "BOOTSTRAP",
+        "RESPONSIVE DESIGN"
+      ],
+      "link": "",
+      "image": "",
+      "featured": false
+    },
+    {
+      "id": "AgAjMmO7",
+      "category": "experience",
+      "title": "Business Website & ERP System",
+      "role": "Software Developer",
+      "description": "Developed a Business Website & ERP System for an industrial automation and training organisation, featuring a responsive website, centralized ERP, and admin panel. The system includes multi-branch management, lead and enquiry tracking, student admissions, course enrolment, faculty assignment, role-based access, and reporting to streamline business and training operations",
+      "tech": [
+        "MERN"
+      ],
+      "link": "",
+      "image": "",
+      "featured": false
+    },
+    {
+      "id": "TmInbsfE",
+      "category": "experience",
+      "title": "Jewellery Management System",
+      "role": "Developer",
+      "description": "Developed and maintained a Jewellery Management System by enhancing existing features, resolving production bugs, and implementing client-specific requirements. The system supports jewellery sales, gold loans, chit schemes, exchange transactions, billing, inventory, and customer management, ensuring smooth and efficient business operations.",
+      "tech": [
+        "REACT",
+        "PHP"
+      ],
+      "link": "",
+      "image": "",
+      "featured": false
+    },
+    {
+      "id": "RTwZxULo",
+      "category": "experience",
+      "title": "Trust & Welfare Management System",
+      "role": "Software Developer",
+      "description": "Developed a Trust & Welfare Management System featuring a responsive website, centralized management system, and admin panel. The platform manages member registrations, welfare schemes, scholarships, financial assistance claims, online payments, and beneficiary records with role-based access for administrators, agents, and members. Integrated a secure payment gateway and built modules for application processing, payment tracking, reports, and website content management.",
+      "tech": [
+        "HTML",
+        "CSS",
+        "JAVASCRIPT",
+        "PHP",
+        "Payment Gateway"
+      ],
+      "link": "",
+      "image": "",
+      "featured": false
+    },
+    {
+      "id": "pBdOn5Co",
+      "category": "personal",
+      "title": "Portfolio Website with Admin Panel",
+      "role": "Full-Stack Developer (Sole Developer)",
+      "description": "Developed a personal portfolio website with a centralised admin panel for dynamic content management. The admin dashboard allows administrators to manage all portfolio sections, including About, Skills, Experience, Projects, Education, Certifications, Achievements, Services, Contact Information, and Social Media links. Any content added or updated through the admin panel is automatically reflected on the portfolio website in real time. The system includes secure authentication, image uploads, resume management, and responsive design, providing an easy-to-use interface for maintaining a professional online portfolio without modifying the source code.",
+      "tech": [
+        "MERN"
+      ],
+      "link": "",
+      "image": "/uploads/photos/sdrxeUDv-Y.png",
+      "featured": false
+    }
+  ],
+  "certifications": [
+    {
+      "id": "uAF7A0VW",
+      "title": "MERN Stack Development — Certified Course",
+      "issuer": "",
+      "date": "",
+      "file": "/uploads/certificates/ojL90lRKel.jpg"
+    },
+    {
+      "id": "sC414MkI",
+      "title": "AI Fluency: Framework & Foundations",
+      "issuer": "Anthropic",
+      "date": "",
+      "file": "/uploads/certificates/uyKzApd3Td.pdf"
+    },
+    {
+      "id": "x5woJ9UM",
+      "title": "Introduction to Claude Cowork",
+      "issuer": "Anthropic",
+      "date": "April 2026",
+      "file": "/uploads/certificates/yNSCpiuaCX.pdf"
+    }
+  ],
+  "experiences": [
+    {
+      "id": "VrGmd7H1",
+      "company": "Aalan TechSoft",
+      "role": "Software Developer",
+      "location": "Salem , TamilNadu , India",
+      "startDate": "June 2025",
+      "endDate": "",
+      "current": true,
+      "description": "Own production ERP systems end-to-end as the primary full-stack developer — architecture, frontend, backend, database design, and third-party integrations — while also extending several live client systems.",
+      "highlights": [
+        "Led the flagship Harwin Interior Design ERP as primary developer and technical decision-maker",
+        "Built role-based JWT authentication and an admin dashboard from the ground up",
+        "Integrated ESSL K30 biometric hardware and a GPS delivery-tracking module",
+        "Used AI coding assistants (Claude AI, ChatGPT) throughout to speed up development and debugging",
+        "Delivered client-specific features and resolved production issues efficiently",
+        "Implemented Razorpay payment gateway and UPI/QR payment integration",
+        "Developed multi-branch ERP systems with role-based access control"
+      ]
+    }
+  ]
+}

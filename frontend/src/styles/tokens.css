@@ -1,0 +1,80 @@
+/* === src/styles/tokens.css ===
+   Dark navy base with a purple → blue gradient identity, plus pink and
+   orange used as rotating accent colors on stat/skill/tag chips (matching
+   the reference template). A light variant exists for the navbar toggle.
+*/
+
+:root {
+  /* Neutrals (dark, default) */
+  --bg: #0a0d18;
+  --surface: #12162a;
+  --surface-alt: #171c33;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --text: #f3f4fa;
+  --text-muted: #9aa1bd;
+  --text-faint: #6b7290;
+
+  /* Brand */
+  --primary: #8b5cf6;
+  --primary-dim: rgba(139, 92, 246, 0.16);
+  --primary-strong: #7c3aed;
+  --secondary: #6366f1;
+  --secondary-dim: rgba(99, 102, 241, 0.16);
+  --pink: #ec4899;
+  --pink-dim: rgba(236, 72, 153, 0.16);
+  --orange: #f97316;
+  --orange-dim: rgba(249, 115, 22, 0.16);
+  --tertiary: #22c55e;
+  --tertiary-dim: rgba(34, 197, 94, 0.14);
+  --danger: #f0716f;
+  --danger-dim: rgba(240, 113, 111, 0.14);
+
+  --gradient-primary: linear-gradient(135deg, var(--primary), var(--secondary));
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 12px 28px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 24px 56px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme='light'] {
+  --bg: #f7f8fc;
+  --surface: #ffffff;
+  --surface-alt: #eef1f8;
+  --border: #e3e7f1;
+  --border-strong: #d3d9e8;
+  --text: #1c2233;
+  --text-muted: #667085;
+  --text-faint: #9aa2b8;
+
+  --primary: #7c3aed;
+  --primary-dim: #f1ecfd;
+  --primary-strong: #6d28d9;
+  --secondary: #4f46e5;
+  --secondary-dim: #eeecfd;
+  --pink: #db2777;
+  --pink-dim: #fce7f3;
+  --orange: #ea580c;
+  --orange-dim: #ffedd5;
+  --tertiary: #16a34a;
+  --tertiary-dim: #e3f9ec;
+  --danger: #dc2626;
+  --danger-dim: #fce9e9;
+
+  --shadow-sm: 0 1px 2px rgba(28, 34, 51, 0.05);
+  --shadow-md: 0 8px 24px rgba(28, 34, 51, 0.08);
+  --shadow-lg: 0 16px 40px rgba(28, 34, 51, 0.12);
+}
+
+:root {
+  --font-display: 'Sora', 'Segoe UI', sans-serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+
+  --max-width: 1180px;
+  --sidebar-width: 84px;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --gap-section: clamp(56px, 9vw, 100px);
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
