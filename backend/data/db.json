@@ -132,7 +132,28 @@
       ],
       "link": "",
       "image": "",
-      "featured": true
+      "featured": true,
+      "company": "Aalan Tech Soft / Interior Design ERP",
+      "duration": "8+ months leadership",
+      "teamSize": "Team project",
+      "problem": "The business needed one system to manage multi-branch operations, projects, stock, billing, staff, carpenters, transport and role-based workflows instead of disconnected manual processes.",
+      "solution": "Built and led a MERN ERP with modular React screens, Node/Express APIs, MongoDB data models, JWT role permissions, reports and integrations for attendance and logistics.",
+      "outcome": "Delivered a central operational ERP used to manage day-to-day business workflows, with ongoing improvements to inventory performance, reporting and tracking.",
+      "features": [
+        "Multi-branch billing and inventory",
+        "Project milestone and team assignment workflow",
+        "Employee and carpenter management",
+        "Transport, driver and shipment tracking modules",
+        "Role-based JWT permissions and reports",
+        "Biometric attendance integration"
+      ],
+      "challenges": [
+        "Keeping stock and report data consistent across modules",
+        "Designing permissions for multiple operational roles",
+        "Integrating hardware and external tracking services",
+        "Optimising large inventory screens and preventing duplicate stock records"
+      ],
+      "slug": "interior-design-erp-management-system"
     },
     {
       "id": "Lcc1BX2f",
@@ -147,7 +168,24 @@
       ],
       "link": "",
       "image": "",
-      "featured": false
+      "featured": false,
+      "company": "Client ERP Project",
+      "duration": "",
+      "teamSize": "Team project",
+      "problem": "Hotel and restaurant operations required a structured backend for core business workflows and reliable data management.",
+      "solution": "Designed the database structure, REST API routes and backend workflow logic with Node.js, Express and database integrations.",
+      "outcome": "Created the backend foundation used by the ERP frontend for daily hotel and restaurant workflows.",
+      "features": [
+        "REST API architecture",
+        "Backend business workflow logic",
+        "Database schema design",
+        "Modular route handling"
+      ],
+      "challenges": [
+        "Keeping business rules consistent across related modules",
+        "Designing reusable APIs for frontend consumption"
+      ],
+      "slug": "hotel-restaurant-erp-system"
     },
     {
       "id": "OHODOl5g",
@@ -160,7 +198,21 @@
       ],
       "link": "https://github.com/sreeniwasangj146002-a11y/Secure-File-Sharing-System-Using-Cryptography",
       "image": "/uploads/photos/E4hD7S-pgX.jpg",
-      "featured": false
+      "featured": false,
+      "company": "Academic Project",
+      "duration": "",
+      "teamSize": "Academic project",
+      "problem": "Users needed a safer way to upload, manage and exchange files with access controls rather than unrestricted sharing.",
+      "solution": "Developed a MERN application for protected file upload/download and role-based access with CRUD workflows.",
+      "outcome": "Demonstrated full-stack file-management and access-control concepts in an academic project.",
+      "features": [
+        "Secure file upload and download",
+        "Role-based access",
+        "CRUD file management",
+        "MERN architecture"
+      ],
+      "challenges": [],
+      "slug": "secure-file-sharing-using-cryptography-in-mern-stack"
     },
     {
       "id": "Y3495cK2",
@@ -177,7 +229,16 @@
       ],
       "link": "",
       "image": "",
-      "featured": false
+      "featured": false,
+      "company": "",
+      "duration": "",
+      "teamSize": "",
+      "problem": "",
+      "solution": "",
+      "outcome": "",
+      "features": [],
+      "challenges": [],
+      "slug": "training-institution-website"
     },
     {
       "id": "AgAjMmO7",
@@ -190,7 +251,16 @@
       ],
       "link": "",
       "image": "",
-      "featured": false
+      "featured": false,
+      "company": "",
+      "duration": "",
+      "teamSize": "",
+      "problem": "",
+      "solution": "",
+      "outcome": "",
+      "features": [],
+      "challenges": [],
+      "slug": "business-website-erp-system"
     },
     {
       "id": "TmInbsfE",
@@ -204,7 +274,16 @@
       ],
       "link": "",
       "image": "",
-      "featured": false
+      "featured": false,
+      "company": "",
+      "duration": "",
+      "teamSize": "",
+      "problem": "",
+      "solution": "",
+      "outcome": "",
+      "features": [],
+      "challenges": [],
+      "slug": "jewellery-management-system"
     },
     {
       "id": "RTwZxULo",
@@ -221,7 +300,16 @@
       ],
       "link": "",
       "image": "",
-      "featured": false
+      "featured": false,
+      "company": "",
+      "duration": "",
+      "teamSize": "",
+      "problem": "",
+      "solution": "",
+      "outcome": "",
+      "features": [],
+      "challenges": [],
+      "slug": "trust-welfare-management-system"
     },
     {
       "id": "pBdOn5Co",
@@ -234,7 +322,27 @@
       ],
       "link": "",
       "image": "/uploads/photos/sdrxeUDv-Y.png",
-      "featured": false
+      "featured": false,
+      "company": "Personal Project",
+      "duration": "Ongoing",
+      "teamSize": "Solo",
+      "problem": "Updating a static portfolio required source-code changes every time a project, skill, resume or profile detail changed.",
+      "solution": "Built a dynamic React and Node.js portfolio with an authenticated admin console so content, projects, resume, appearance and analytics can be managed without editing source code.",
+      "outcome": "A maintainable portfolio platform that can be updated from the browser and extended with new modules.",
+      "features": [
+        "Dynamic hero, about, skills and contact content",
+        "Separate work and personal project management",
+        "Resume and image uploads",
+        "Admin authentication",
+        "Visitor analytics and project view tracking",
+        "Multipage project case studies and contact inbox"
+      ],
+      "challenges": [
+        "Keeping public and admin UI in sync with one data source",
+        "Handling uploaded files across frontend and backend origins",
+        "Adding analytics without blocking the public UI"
+      ],
+      "slug": "portfolio-website-with-admin-panel"
     }
   ],
   "certifications": [
@@ -280,5 +388,316 @@
         "Developed multi-branch ERP systems with role-based access control"
       ]
     }
-  ]
+  ],
+  "analytics": {
+    "totalViews": 30,
+    "visitors": [
+      "v_1789296514120_nesj4g0d"
+    ],
+    "events": [
+      {
+        "event": "page_view",
+        "at": "2026-09-13T12:36:21.097Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      },
+      {
+        "event": "page_view",
+        "at": "2026-09-13T12:36:21.087Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      },
+      {
+        "event": "page_view",
+        "at": "2026-09-13T12:18:57.218Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      },
+      {
+        "event": "page_view",
+        "at": "2026-09-13T12:18:56.923Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      },
+      {
+        "event": "page_view",
+        "at": "2026-09-13T11:37:59.907Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      },
+      {
+        "event": "page_view",
+        "at": "2026-09-13T11:37:59.893Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      },
+      {
+        "event": "page_view",
+        "at": "2026-09-13T11:15:01.803Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      },
+      {
+        "event": "page_view",
+        "at": "2026-09-13T11:15:01.788Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      },
+      {
+        "event": "page_view",
+        "at": "2026-09-13T11:13:41.146Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      },
+      {
+        "event": "page_view",
+        "at": "2026-09-13T11:13:41.140Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      },
+      {
+        "event": "page_view",
+        "at": "2026-09-13T11:12:51.413Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      },
+      {
+        "event": "page_view",
+        "at": "2026-09-13T11:12:51.399Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      },
+      {
+        "event": "page_view",
+        "at": "2026-09-13T11:12:46.036Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/projects",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      },
+      {
+        "event": "page_view",
+        "at": "2026-09-13T11:12:46.033Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/projects",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      },
+      {
+        "event": "project_view",
+        "at": "2026-09-13T11:12:23.570Z",
+        "path": "/projects/hotel-restaurant-erp-system",
+        "referrer": "",
+        "searchTerm": "",
+        "projectId": "Lcc1BX2f",
+        "projectTitle": "Hotel & Restaurant ERP System",
+        "screen": ""
+      },
+      {
+        "event": "page_view",
+        "at": "2026-09-13T11:12:23.496Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/projects/hotel-restaurant-erp-system",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      },
+      {
+        "event": "page_view",
+        "at": "2026-09-13T11:12:23.493Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/projects/hotel-restaurant-erp-system",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      },
+      {
+        "event": "page_view",
+        "at": "2026-09-13T11:12:20.709Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      },
+      {
+        "event": "page_view",
+        "at": "2026-09-13T11:12:20.701Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      },
+      {
+        "event": "project_view",
+        "at": "2026-09-13T11:12:09.187Z",
+        "path": "/projects/interior-design-erp-management-system",
+        "referrer": "",
+        "searchTerm": "",
+        "projectId": "0XAC-V_7",
+        "projectTitle": "Interior Design ERP Management System",
+        "screen": ""
+      },
+      {
+        "event": "page_view",
+        "at": "2026-09-13T11:12:09.100Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/projects/interior-design-erp-management-system",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      },
+      {
+        "event": "page_view",
+        "at": "2026-09-13T11:12:09.090Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/projects/interior-design-erp-management-system",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      },
+      {
+        "event": "page_view",
+        "at": "2026-09-13T11:11:56.757Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      },
+      {
+        "event": "page_view",
+        "at": "2026-09-13T11:11:56.747Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      },
+      {
+        "event": "page_view",
+        "at": "2026-09-13T11:11:54.664Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/projects",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      },
+      {
+        "event": "page_view",
+        "at": "2026-09-13T11:11:54.634Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/projects",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      },
+      {
+        "event": "page_view",
+        "at": "2026-09-13T11:11:41.046Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      },
+      {
+        "event": "page_view",
+        "at": "2026-09-13T11:11:40.934Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      },
+      {
+        "event": "page_view",
+        "at": "2026-09-13T11:11:33.047Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      },
+      {
+        "event": "page_view",
+        "at": "2026-09-13T11:11:32.982Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      },
+      {
+        "event": "page_view",
+        "at": "2026-09-13T11:11:30.325Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/projects",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      },
+      {
+        "event": "page_view",
+        "at": "2026-09-13T11:11:30.306Z",
+        "visitorId": "v_1789296514120_nesj4g0d",
+        "path": "/projects",
+        "referrer": "",
+        "searchTerm": "",
+        "screen": "1536x960"
+      }
+    ],
+    "projectViews": {
+      "0XAC-V_7": 1,
+      "Lcc1BX2f": 1
+    },
+    "cvDownloads": 0,
+    "contactClicks": 0
+  },
+  "messages": [],
+  "seo": {
+    "title": "Sreeniwasan G J | MERN Stack Developer",
+    "description": "Portfolio of Sreeniwasan G J, a MERN stack software developer building ERP systems, web applications and integrations.",
+    "keywords": "MERN stack developer, React developer, Node.js developer, ERP developer, full stack developer",
+    "ogImage": ""
+  }
 }

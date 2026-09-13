@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import {
   FiHome, FiUser, FiCpu, FiBriefcase, FiFolder, FiFolderPlus,
-  FiAward, FiMail, FiShield, FiLogOut, FiExternalLink, FiMenu, FiX, FiType
+  FiAward, FiMail, FiShield, FiLogOut, FiExternalLink, FiMenu, FiX, FiType, FiBarChart2, FiInbox, FiSearch
 } from 'react-icons/fi';
 import { useAuth } from './AuthContext';
 import { useTheme } from '../theme/ThemeContext';
@@ -15,6 +15,9 @@ import CertificationsEditor from './sections/CertificationsEditor';
 import ContactEditor from './sections/ContactEditor';
 import AppearanceEditor from './sections/AppearanceEditor';
 import SecurityEditor from './sections/SecurityEditor';
+import AnalyticsEditor from './sections/AnalyticsEditor';
+import MessagesEditor from './sections/MessagesEditor';
+import SeoEditor from './sections/SeoEditor';
 
 const TABS = [
   { key: 'home', label: 'Home', icon: FiHome },
@@ -25,6 +28,9 @@ const TABS = [
   { key: 'personal-projects', label: 'Personal Projects', icon: FiFolderPlus },
   { key: 'certifications', label: 'Certificates', icon: FiAward },
   { key: 'contact', label: 'Contact', icon: FiMail },
+  { key: 'messages', label: 'Messages', icon: FiInbox },
+  { key: 'analytics', label: 'Analytics', icon: FiBarChart2 },
+  { key: 'seo', label: 'SEO', icon: FiSearch },
   { key: 'appearance', label: 'Appearance', icon: FiType },
   { key: 'security', label: 'Security', icon: FiShield }
 ];
@@ -102,6 +108,9 @@ export default function AdminDashboard() {
         )}
         {active === 'certifications' && <CertificationsEditor />}
         {active === 'contact' && <ContactEditor />}
+        {active === 'messages' && <MessagesEditor />}
+        {active === 'analytics' && <AnalyticsEditor />}
+        {active === 'seo' && <SeoEditor />}
         {active === 'appearance' && <AppearanceEditor />}
         {active === 'security' && <SecurityEditor />}
       </main>

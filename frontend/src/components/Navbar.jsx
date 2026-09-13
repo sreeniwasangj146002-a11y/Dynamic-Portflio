@@ -1,77 +1,69 @@
-// === src/components/Navbar.jsx ===
-import { useEffect, useState } from 'react';
-import { FiMenu, FiX, FiHome, FiUser, FiCpu, FiBriefcase, FiFolder, FiMail, FiDownload, FiSun, FiMoon } from 'react-icons/fi';
-import { useTheme } from '../theme/ThemeContext';
-import { fileUrl } from '../api/api';
+import { useState } from 'react';
+import { FiCode, FiDownload, FiMenu, FiX } from 'react-icons/fi';
+import { useLocation, useNavigate } from 'react-router-dom';
+import api, { fileUrl } from '../api/api';
 
 const LINKS = [
-  { id: 'home', label: 'Home', icon: FiHome },
-  { id: 'about', label: 'About', icon: FiUser },
-  { id: 'stack', label: 'Skills', icon: FiCpu },
-  { id: 'work', label: 'Projects', icon: FiFolder },
-  { id: 'experience', label: 'Experience', icon: FiBriefcase },
-  { id: 'contact', label: 'Contact', icon: FiMail }
+  { to: '/', label: 'Home' },
+  { to: '/#about', label: 'About' },
+  { to: '/#stack', label: 'Skills' },
+  { to: '/projects', label: 'Projects' },
+  { to: '/experience', label: 'Experience' },
+  { to: '/contact', label: 'Contact' }
 ];
 
-export default function Navbar({ name, title, resumeUrl }) {
+export default function Navbar({ name, resumeUrl }) {
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-  const { theme, toggleTheme } = useTheme();
+  const location = useLocation();
+  const navigate = useNavigate();
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 12);
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
-
-  const go = (id) => {
+  const go = (to) => {
     setOpen(false);
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    if (to.startsWith('/#')) {
+      const id = to.slice(2);
+      if (location.pathname === '/') {
+        document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else {
+        navigate(`/#${id}`);
+      }
+      return;
+    }
+    navigate(to);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const isActive = (to) => to === '/' ? location.pathname === '/' : !to.includes('#') && location.pathname.startsWith(to);
+
   return (
-    <header className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
-      <div className="container navbar-inner">
-        <button className="navbar-wordmark" onClick={() => go('home')}>
-          <span className="navbar-name">{name || 'Portfolio'}</span>
-          {title && <span className="navbar-role">{title}</span>}
+    <header className="portfolio-navbar">
+      <div className="portfolio-navbar-inner">
+        <button className="portfolio-brand" onClick={() => go('/')} aria-label="Go to home">
+          <span className="portfolio-brand-icon"><FiCode /></span>
+          <span>{name || 'Portfolio'}</span>
         </button>
 
-        <nav className="navbar-links">
-          {LINKS.map((l) => (
-            <button key={l.id} className="navbar-link" onClick={() => go(l.id)}>
-              {l.label}
+        <nav className="portfolio-nav-links" aria-label="Primary navigation">
+          {LINKS.map((link) => (
+            <button key={link.to} className={`portfolio-nav-link ${isActive(link.to) ? 'active' : ''}`} onClick={() => go(link.to)}>
+              {link.label}
             </button>
           ))}
         </nav>
 
-        <div className="navbar-actions">
-          <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
-            {theme === 'light' ? <FiMoon size={16} /> : <FiSun size={16} />}
-          </button>
+        <div className="portfolio-nav-actions">
           {resumeUrl && (
-            <a className="btn btn-primary navbar-resume" href={fileUrl(resumeUrl)} target="_blank" rel="noreferrer">
-              <FiDownload size={14} /> Download CV
+            <a className="portfolio-outline-btn portfolio-resume-btn" href={fileUrl(resumeUrl)} target="_blank" rel="noreferrer" onClick={() => api.post('/api/analytics/track', { event: 'cv_download' }).catch(() => {})}>
+              <FiDownload /> Download CV
             </a>
           )}
-          <button className="navbar-toggle" onClick={() => setOpen(!open)} aria-label="Toggle menu">
-            {open ? <FiX size={20} /> : <FiMenu size={20} />}
-          </button>
+          <button className="portfolio-menu-btn" onClick={() => setOpen((v) => !v)} aria-label="Toggle navigation">{open ? <FiX /> : <FiMenu />}</button>
         </div>
       </div>
 
       {open && (
-        <div className="navbar-mobile">
-          {LINKS.map((l) => (
-            <button key={l.id} className="navbar-mobile-link" onClick={() => go(l.id)}>
-              <l.icon size={15} /> {l.label}
-            </button>
-          ))}
-          {resumeUrl && (
-            <a className="btn btn-primary" href={fileUrl(resumeUrl)} target="_blank" rel="noreferrer">
-              <FiDownload size={14} /> Download CV
-            </a>
-          )}
+        <div className="portfolio-mobile-menu">
+          {LINKS.map((link) => <button key={link.to} className={isActive(link.to) ? 'active' : ''} onClick={() => go(link.to)}>{link.label}</button>)}
+          {resumeUrl && <a href={fileUrl(resumeUrl)} target="_blank" rel="noreferrer"><FiDownload /> Download CV</a>}
         </div>
       )}
     </header>
