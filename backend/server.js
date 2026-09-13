@@ -16,6 +16,7 @@ const experiencesRoutes = require('./routes/experiences');
 const certificationsRoutes = require('./routes/certifications');
 const uploadRoutes = require('./routes/upload');
 const contactRoutes = require('./routes/contact');
+const analyticsRoutes = require('./routes/analytics');
 
 const app = express();
 
@@ -36,6 +37,7 @@ app.use('/api/experiences', experiencesRoutes);
 app.use('/api/certifications', certificationsRoutes);
 app.use('/api/upload', uploadRoutes);
 app.use('/api/contact', contactRoutes);
+app.use('/api/analytics', analyticsRoutes);
 
 app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
 

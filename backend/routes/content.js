@@ -13,7 +13,8 @@ router.get('/', (req, res) => {
     about: db.about,
     skills: db.skills,
     contact: db.contact,
-    appearance: db.appearance || { fontPreset: 'modern', baseFontSize: 16 }
+    appearance: db.appearance || { fontPreset: 'modern', baseFontSize: 16 },
+    seo: db.seo || { title: '', description: '', keywords: '', ogImage: '' }
   });
 });
 
@@ -47,6 +48,13 @@ router.put('/contact', requireAuth, (req, res) => {
   db.contact = { ...db.contact, ...req.body };
   writeDB(db);
   res.json(db.contact);
+});
+
+router.put('/seo', requireAuth, (req, res) => {
+  const db = readDB();
+  db.seo = { ...db.seo, ...req.body };
+  writeDB(db);
+  res.json(db.seo);
 });
 
 // PUT /api/content/appearance -> admin only (font style + base size for the public site)

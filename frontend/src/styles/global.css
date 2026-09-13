@@ -23,11 +23,7 @@ html {
 
 body {
   margin: 0;
-  background: var(--bg);
-  background-image:
-    radial-gradient(ellipse 900px 600px at 12% -8%, var(--primary-dim), transparent 60%),
-    radial-gradient(ellipse 700px 500px at 92% 8%, var(--secondary-dim), transparent 55%);
-  background-attachment: fixed;
+  background: #07101f;
   color: var(--text);
   font-family: var(--font-body);
   font-size: 1rem;

@@ -7,10 +7,31 @@ const { uploadPhoto } = require('../middleware/upload');
 
 const router = express.Router();
 
+const slugify = (value = '') => String(value)
+  .toLowerCase()
+  .trim()
+  .replace(/[^a-z0-9]+/g, '-')
+  .replace(/^-+|-+$/g, '');
+
+const projectSlug = (project = {}) => project.slug || slugify(project.title || project.id || 'project');
+
 // GET /api/projects -> public
 router.get('/', (req, res) => {
   const db = readDB();
-  res.json(db.projects || []);
+  // Always expose a stable readable slug, including for older project records.
+  res.json((db.projects || []).map((project) => ({ ...project, slug: projectSlug(project) })));
+});
+
+// GET /api/projects/:identifier -> public project detail.
+// Accept both the original nanoid and the readable slug so existing links never break.
+router.get('/:identifier', (req, res) => {
+  const db = readDB();
+  const identifier = decodeURIComponent(req.params.identifier || '');
+  const project = (db.projects || []).find((p) =>
+    p.id === identifier || p.slug === identifier || projectSlug(p) === identifier
+  );
+  if (!project) return res.status(404).json({ message: 'Project not found.' });
+  res.json({ ...project, slug: projectSlug(project) });
 });
 
 // POST /api/projects -> admin only, create
@@ -18,6 +39,7 @@ router.post('/', requireAuth, (req, res) => {
   const db = readDB();
   const project = {
     id: nanoid(8),
+    slug: slugify(req.body.slug || req.body.title || 'untitled-project'),
     category: req.body.category === 'experience' ? 'experience' : 'personal',
     title: req.body.title || 'Untitled project',
     role: req.body.role || '',
@@ -25,7 +47,15 @@ router.post('/', requireAuth, (req, res) => {
     tech: Array.isArray(req.body.tech) ? req.body.tech : [],
     link: req.body.link || '',
     image: req.body.image || '',
-    featured: !!req.body.featured
+    featured: !!req.body.featured,
+    company: req.body.company || '',
+    duration: req.body.duration || '',
+    teamSize: req.body.teamSize || '',
+    problem: req.body.problem || '',
+    solution: req.body.solution || '',
+    outcome: req.body.outcome || '',
+    features: Array.isArray(req.body.features) ? req.body.features : [],
+    challenges: Array.isArray(req.body.challenges) ? req.body.challenges : []
   };
   db.projects = db.projects || [];
   db.projects.push(project);
@@ -39,7 +69,9 @@ router.put('/:id', requireAuth, (req, res) => {
   const idx = (db.projects || []).findIndex((p) => p.id === req.params.id);
   if (idx === -1) return res.status(404).json({ message: 'Project not found.' });
 
-  db.projects[idx] = { ...db.projects[idx], ...req.body, id: db.projects[idx].id };
+  const merged = { ...db.projects[idx], ...req.body, id: db.projects[idx].id };
+  merged.slug = slugify(req.body.slug || merged.slug || merged.title || merged.id);
+  db.projects[idx] = merged;
   writeDB(db);
   res.json(db.projects[idx]);
 });
